@@ -1,5 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class PriorityQueues {
     public static void main(String[] args){
@@ -7,7 +6,7 @@ public class PriorityQueues {
     // Priority Queue is used to serve elements
     // Higher priority queue are served first before lower priority
 
-        Queue<Double> priorityQueue = new LinkedList<>();
+        Queue<Double> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
         priorityQueue.offer(3.0);
         priorityQueue.offer(4.0);
         priorityQueue.offer(1.5);
