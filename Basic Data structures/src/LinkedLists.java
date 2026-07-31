@@ -9,11 +9,21 @@ public class LinkedLists {
 
         //Stack Demonstration
 
-        linkedList.push("Guitar");
-        linkedList.push("Piano");
-        linkedList.push("Violet");
-        linkedList.push("Drum");
-        linkedList.push("Bass");
+//        linkedList.push("Guitar");
+//        linkedList.push("Piano");
+//        linkedList.push("Violet");
+//        linkedList.push("Drum");
+//        linkedList.push("Bass");
+//        linkedList.pop(); //removes top object same as Stack follows LIFO i.e. Bass will be removed
+
+        //Queue Demonstration
+
+        linkedList.offer("Guitar");
+        linkedList.offer("Piano");
+        linkedList.offer("Violet");
+        linkedList.offer("Drum");
+        linkedList.offer("Bass");
+        linkedList.poll(); // removes the first object as Queue follow FIFO  i.e. Guitar will be removed
 
         System.out.println(linkedList);
 
