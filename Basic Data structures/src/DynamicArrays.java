@@ -35,6 +35,20 @@ public class DynamicArrays {
 
     public void delete(Object object){
 
+        for(int i = 0; i < size; i++) { //loop through the array
+            if(array[i] == object){
+                for(int j = 0; j < (size - i -1); j++){
+                    array[i+j] = array[i+j+1]; // shifts element left i.e. copying elements towards left
+                }
+                array[size - 1] = null;
+                size --;
+                if(size <= (int) (capacity/3)){
+                    shrink();
+                }
+                break;
+            }
+        }
+
     }
 
     public int search(){

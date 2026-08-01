@@ -7,11 +7,12 @@ public class DynamicArraysDemo {
         dynamicArrays.add(4);
         dynamicArrays.add(true);
 
-        dynamicArrays.insert(0, 3.6);
+        dynamicArrays.insert(1, 3.6);
+        dynamicArrays.delete("Guitar");
 
-//        System.out.println(dynamicArrays.isEmpty());
-//        System.out.println(dynamicArrays.size);
-//        System.out.println(dynamicArrays.capacity);
+        System.out.println(dynamicArrays.isEmpty());
+        System.out.println(dynamicArrays.size);
+        System.out.println(dynamicArrays.capacity);
         System.out.println(dynamicArrays);
 
 
