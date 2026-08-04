@@ -22,13 +22,34 @@ public class ListTimeTaken {
 
         startTime = System.nanoTime();
 
-        linkedList.get(500);
+        //linkedList.get(0);
+        //linkedList.get(500000);
+        //linkedList.getLast();
+        //linkedList.removeFirst();
+        //linkedList.remove(500000);
+        linkedList.removeLast();
 
         endTime = System.nanoTime();
 
         elapsedTime = endTime - startTime;
-        System.out.println("Time taken: " + elapsedTime + " ns");
+        System.out.println("LinkedList: " + elapsedTime + " ns");
 
+
+        // for arrayList
+        startTime = System.nanoTime();
+
+        //arrayList.get(0);
+        //arrayList.get(500000);
+        //arrayList.getLast();
+       // arrayList.removeFirst();
+        //arrayList.remove(500000);
+        arrayList.removeLast();
+
+        endTime = System.nanoTime();
+
+        elapsedTime = endTime - startTime;
+
+        System.out.println("ArrayList: " + elapsedTime + " ns");
 
     }
 }
