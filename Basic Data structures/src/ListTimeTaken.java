@@ -23,11 +23,11 @@ public class ListTimeTaken {
         startTime = System.nanoTime();
 
         //linkedList.get(0);
-        //linkedList.get(500000);
+        linkedList.get(500000);
         //linkedList.getLast();
         //linkedList.removeFirst();
         //linkedList.remove(500000);
-        linkedList.removeLast();
+        //linkedList.removeLast();
 
         endTime = System.nanoTime();
 
@@ -39,11 +39,11 @@ public class ListTimeTaken {
         startTime = System.nanoTime();
 
         //arrayList.get(0);
-        //arrayList.get(500000);
+        arrayList.get(500000);
         //arrayList.getLast();
        // arrayList.removeFirst();
         //arrayList.remove(500000);
-        arrayList.removeLast();
+        //arrayList.removeLast();
 
         endTime = System.nanoTime();
 
