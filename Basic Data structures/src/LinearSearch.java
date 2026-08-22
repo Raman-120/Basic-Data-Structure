@@ -15,5 +15,25 @@ public class LinearSearch {
 
         // linear search demonstration using an array
 
+        int[] numbers = {5,10,25,30,45,50,65,67};
+
+        int index = linearSearch(numbers, 68);
+        if(index != -1){
+            System.out.println("Element found at index: " + index);
+        }
+        else {
+            System.out.println("Element not found.");
+        }
+
+    }
+
+    private static int linearSearch(int[] array, int value){
+
+        for(int i = 0; i < array.length; i++){
+            if(array[i] == value){
+                return i;
+            }
+        }
+        return  -1;
     }
 }
