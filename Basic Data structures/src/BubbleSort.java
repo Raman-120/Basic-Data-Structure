@@ -5,6 +5,11 @@ public class BubbleSort {
         // order, if not then elements are switched, then the next pair of JSON elements is compared and we
         // continue this pattern until all the elements are in order.
 
+        // time complexity : O(n^2)
+        // It is okayish for small data sets but,
+        // It is horrible for large data sets
+
+
         int[] numbers = {5,6,7,8,9,4,3,2,1};
 
         bubbleSort(numbers);
